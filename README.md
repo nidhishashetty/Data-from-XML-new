@@ -9,9 +9,9 @@ There is no UI support for XML as of now, and you will be directed to functions 
 <p align="center">Fig 1.2: DataFromXML function</p>
 
 **DataFromXml.SK()** function has the following arguments: \
-**File_location**: Data from single / multiple file(s) with similar structure can be imported by selecting the Excel range that specifies the file paths. \
-**For example**: DataFromXml.SK(**$B$2**) \
-**Root**: A parent root which contains all the elements and attributes which are required in the import.
++ **File_location**: Data from single / multiple file(s) with similar structure can be imported by selecting the Excel range that specifies the file paths. \
++ **For example**: DataFromXml.SK(**$B$2**) \
++ **Root**: A parent root which contains all the elements and attributes which are required in the import.
 In the following example, **catalog** is the parent root:   
 
 ```
