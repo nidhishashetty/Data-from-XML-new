@@ -79,7 +79,7 @@ In the following XML example, **author**, **title**, **genre**, **price**, **pub
 If pattern is selected for the same, there should be an at symbol (`@`) before the **Attributes**. Both of them are case sensitive. In the preceding example, `<book id="bk101">` code line has *id* as the attribute of *book* element.
  
 **For example**: 
-`=DataFromXml.SK($B$2,"a:catalog/a:book",{"a:author","a:genre","@id"},FALSE,M12:N12)`
-For blank rows or comments which are not contained in elements should have a pattern column looking for text; it should be used with the `TEXT` function.
+`=DataFromXml.SK($B$2,"a:catalog/a:book",{"a:author","a:genre","@id"},FALSE,M12:N12)` \
+For blank rows or comments which are not contained in elements should have a pattern column looking for text; it should be used with the `TEXT` function. \
 In a similar way, you can select only the required columns.
  
