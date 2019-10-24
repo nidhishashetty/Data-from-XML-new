@@ -45,8 +45,7 @@ In the following example, **catalog** is the parent root:
     ```
 
 + **Exclude Column Headers**: Specifies whether the column header must be included or not. **TRUE** excludes the column headers, **FALSE** includes column header into the imported data.
-+ **Namespaces manager**: Selecting the Excel range that specifies the namespace and a corresponding key. This field is used when the XML file contains namespace
-(<catalog xmlns="http://www.w3.org/TR/html4/">). 
++ **Namespaces manager**: Selecting the Excel range that specifies the namespace and a corresponding key. This field is used when the XML file contains namespace `(<catalog xmlns="http://www.w3.org/TR/html4/">)`. 
 In this case, while providing values to Pattern fields the column headers will have the namespace key prepended to it. (a:author, a:title, a:price)
 ``` 
 <h3>Sample XML Format:</h3>
