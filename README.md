@@ -31,18 +31,18 @@ In the following example, **catalog** is the parent root:
   **For example**: DataFromXml.SK($B$2,"**catalog/book**")
  
 + **Pattern**: Arrangement of all the field names which will be required from the XML file and it acts as the header when sorted as a tabular data. \
-In the following example, **author**, **title**, **genre**, **price**, **publish_date**, **description** are the headers which can be provided as values for **Pattern** field. 
+  In the following example, **author**, **title**, **genre**, **price**, **publish_date**, **description** are the headers which can be provided as values for **Pattern** field. 
 
-```
-<book id="bk101">
-    <author>Gambardella, Matthew</author>
-    <title>XML Developer's Guide</title>
-    <genre>Computer</genre>
-    <price>44.95</price>
-    <publish_date>2000-10-01</publish_date>
-    <description>In-depth look at creating applications with XML.</description>
-</book>
-```
+    ```
+    <book id="bk101">
+        <author>Gambardella, Matthew</author>
+        <title>XML Developer's Guide</title>
+        <genre>Computer</genre>
+        <price>44.95</price>
+        <publish_date>2000-10-01</publish_date>
+        <description>In-depth look at creating applications with XML.</description>
+    </book>
+    ```
 
 + **Exclude Column Headers**: Specifies whether the column header must be included or not. **TRUE** excludes the column headers, **FALSE** includes column header into the imported data.
 + **Namespaces manager**: Selecting the Excel range that specifies the namespace and a corresponding key. This field is used when the XML file contains namespace
