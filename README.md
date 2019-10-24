@@ -11,26 +11,26 @@ There is no UI support for XML as of now, and you will be directed to functions 
 **DataFromXml.SK()** function has the following arguments: 
 + **File_location**: Data from single / multiple file(s) with similar structure can be imported by selecting the Excel range that specifies the file paths. \
  **For example**: DataFromXml.SK(**$B$2**) 
-+ **Root**: A parent root which contains all the elements and attributes which are required in the import.
++ **Root**: A parent root which contains all the elements and attributes which are required in the import. \
 In the following example, **catalog** is the parent root:   
 
-```
-<catalog xmlns="http://www.w3.org/TR/html4/">
-    <book id="bk101">
-        <author>Gambardella, Matthew</author>
-        <title>XML Developer's Guide</title>
-        <genre>Computer</genre>
-        <price>44.95</price>
-        <publish_date>2000-10-01</publish_date>
-        <description>In-depth look at creating applications with XML.</description>
-    </book>
-</catalog>
-```      
+    ```
+    <catalog xmlns="http://www.w3.org/TR/html4/">
+        <book id="bk101">
+            <author>Gambardella, Matthew</author>
+            <title>XML Developer's Guide</title>
+            <genre>Computer</genre>
+            <price>44.95</price>
+            <publish_date>2000-10-01</publish_date>
+            <description>In-depth look at creating applications with XML.</description>
+        </book>
+    </catalog>
+    ```      
 
 To further tabulate the data in the proper form, you can separate the parent object and the child object with a forward slash (**/**) \
 **For example**: DataFromXml.SK($B$2,"**catalog/book**")
  
-**Pattern**: Arrangement of all the field names which will be required from the XML file and it acts as the header when sorted as a tabular data. \
++ **Pattern**: Arrangement of all the field names which will be required from the XML file and it acts as the header when sorted as a tabular data. \
 In the following example, **author**, **title**, **genre**, **price**, **publish_date**, **description** are the headers which can be provided as values for **Pattern** field. 
 
 ```
@@ -44,8 +44,8 @@ In the following example, **author**, **title**, **genre**, **price**, **publish
 </book>
 ```
 
-**Exclude Column Headers**: Specifies whether the column header must be included or not. TRUE excludes the column headers, FALSE includes column header into the imported data.
-Namespaces manager: Selecting the Excel range that specifies the namespace and a corresponding key. This field is used when the XML file contains namespace
++ **Exclude Column Headers**: Specifies whether the column header must be included or not. **TRUE** excludes the column headers, **FALSE** includes column header into the imported data.
++ **Namespaces manager**: Selecting the Excel range that specifies the namespace and a corresponding key. This field is used when the XML file contains namespace
 (<catalog xmlns="http://www.w3.org/TR/html4/">). 
 In this case, while providing values to Pattern fields the column headers will have the namespace key prepended to it. (a:author, a:title, a:price)
 ``` 
