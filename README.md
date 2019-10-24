@@ -63,9 +63,10 @@ In this case, while providing values to Pattern fields the column headers will h
 </catalog>
 ```
 
-**Note**: The **Root** in this XML file is **catalog**.
-Before selecting the option for DataFromXML, a root element must be selected which contains the elements and attributes required. Once the root is identified, the elements and attributes can be provided as patterns, and if no pattern is provided, it will reflect the entire data in a tabular form by itself with the column headers.
-In the following XML example, author, title, genre, price, publish_date, description are the Pattern values:
+**Note**: The **Root** in this XML file is **catalog**. \
+Before selecting the option for `DataFromXML`, a root element must be selected which contains the elements and attributes required. Once the root is identified, the elements and attributes can be provided as patterns, and if no pattern is provided, it will reflect the entire data in a tabular form by itself with the column headers. \
+In the following XML example, **author**, **title**, **genre**, **price**, **publish_date**, **description** are the **Pattern** values:
+```
 <book id="bk101">
     <author>Gambardella, Matthew</author>
     <title>XML Developer's Guide</title>
@@ -74,11 +75,11 @@ In the following XML example, author, title, genre, price, publish_date, descrip
     <publish_date>2000-10-01</publish_date>
     <description>In-depth look at creating applications with XML.</description>
 </book>
-
-If pattern is selected for the same, there should be an at symbol (@) before the Attributes. Both of them are case sensitive. In the preceding example, <book id="bk101"> code line has id as the attribute of book element.
+```
+If pattern is selected for the same, there should be an at symbol (`@`) before the **Attributes**. Both of them are case sensitive. In the preceding example, **<book id="bk101">** code line has *id* as the attribute of *book* element.
  
-For example: 
-=DataFromXml.SK($B$2,"a:catalog/a:book",{"a:author","a:genre","@id"},FALSE,M12:N12)
-For blank rows or comments which are not contained in elements should have a pattern column looking for text; it should be used with the TEXT function.
+**For example**: 
+`=DataFromXml.SK($B$2,"a:catalog/a:book",{"a:author","a:genre","@id"},FALSE,M12:N12)`
+For blank rows or comments which are not contained in elements should have a pattern column looking for text; it should be used with the `TEXT` function.
 In a similar way, you can select only the required columns.
  
