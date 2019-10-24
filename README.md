@@ -27,8 +27,8 @@ In the following example, **catalog** is the parent root:
     </catalog>
     ```      
 
-To further tabulate the data in the proper form, you can separate the parent object and the child object with a forward slash (**/**) \
-**For example**: DataFromXml.SK($B$2,"**catalog/book**")
+  To further tabulate the data in the proper form, you can separate the parent object and the child object with a forward slash (**/**) \
+  **For example**: DataFromXml.SK($B$2,"**catalog/book**")
  
 + **Pattern**: Arrangement of all the field names which will be required from the XML file and it acts as the header when sorted as a tabular data. \
 In the following example, **author**, **title**, **genre**, **price**, **publish_date**, **description** are the headers which can be provided as values for **Pattern** field. 
