@@ -49,6 +49,7 @@ In the following example, **catalog** is the parent root:
 In this case, while providing values to Pattern fields the column headers will have the namespace key prepended to it. (**a:author**, **a:title**, **a:price**)
 
 <h3>Sample XML Format:</h3>
+
 ``` 
 <catalog xmlns="http://www.w3.org/TR/html4/">
     <book id="bk101">
@@ -61,6 +62,7 @@ In this case, while providing values to Pattern fields the column headers will h
     </book>
 </catalog>
 ```
+
 **Note**: The **Root** in this XML file is **catalog**.
 Before selecting the option for DataFromXML, a root element must be selected which contains the elements and attributes required. Once the root is identified, the elements and attributes can be provided as patterns, and if no pattern is provided, it will reflect the entire data in a tabular form by itself with the column headers.
 In the following XML example, author, title, genre, price, publish_date, description are the Pattern values:
