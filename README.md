@@ -1,6 +1,6 @@
 # Data-from-XML
 
-Import from XML function is used to get data from an XML file format.
+Import from XML function is used to get data from an XML file format. \
 SheetKraft contains the **Data From XML** option which can be accessed by the **Import From** button present in the **SheetKraft** tab as shown in the following figure:
 
 <p align="center">Fig 1.1: Import from XML option</p>
@@ -76,7 +76,7 @@ In the following XML example, **author**, **title**, **genre**, **price**, **pub
     <description>In-depth look at creating applications with XML.</description>
 </book>
 ```
-If pattern is selected for the same, there should be an at symbol (`@`) before the **Attributes**. Both of them are case sensitive. In the preceding example, **<book id="bk101">** code line has *id* as the attribute of *book* element.
+If pattern is selected for the same, there should be an at symbol (`@`) before the **Attributes**. Both of them are case sensitive. In the preceding example, `<book id="bk101">` code line has *id* as the attribute of *book* element.
  
 **For example**: 
 `=DataFromXml.SK($B$2,"a:catalog/a:book",{"a:author","a:genre","@id"},FALSE,M12:N12)`
